@@ -1,0 +1,15 @@
+body{
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    box-sizing: content-box;
+}
+
+.list{
+    list-style: none;
+    text-align: start;
+    list-style-position: outside;
+}
+.checked{
+    text-decoration: line-through;
+}

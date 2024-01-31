@@ -49,7 +49,11 @@ button.onclick = function Add(e) {
             console.log(correspondingItem);
             if (e.target.checked) {
                 console.log(document.getElementById(`checkbox_${checkboxId}`).nextSibling.nextSibling);
-                document.getElementById(`checkbox_${checkboxId}`).nextSibling.nextSibling.classList.toggle('checked');
+                document.getElementById(`checkbox_${checkboxId}`).nextSibling.nextSibling.classList.add('checked');
+            }
+            else {
+                console.log(document.getElementById(`checkbox_${checkboxId}`).nextSibling.nextSibling);
+                document.getElementById(`checkbox_${checkboxId}`).nextSibling.nextSibling.classList.remove('checked');
             } 
         }
     });
